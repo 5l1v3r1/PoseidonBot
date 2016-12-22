@@ -12,8 +12,14 @@ if (!token) {
   process.exit();
 }
 
+let port = process.env.PORT || 8443;
+let host = process.env.HOST;
 let bot = new TelegramBot(token, {
-  polling: true
+  polling: true,
+  webHook: {
+    port: port,
+    host: host
+  }
 });
 
 let flood = '';
