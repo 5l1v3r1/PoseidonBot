@@ -3,7 +3,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 let token = process.env.TOKEN;
-console.log(token);
 
 let bot = new TelegramBot(token, {
   polling: true
