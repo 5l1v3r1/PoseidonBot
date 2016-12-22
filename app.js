@@ -7,7 +7,7 @@ const CONFIG_FILE_NAME = 'config.json';
 
 let config = JSON.parse(fs.readFileSync(CONFIG_FILE_NAME));
 
-let token = config.token;
+let token = config.token || process.env.TOKEN;
 
 let bot = new TelegramBot(token, {
   polling: true
