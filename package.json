@@ -19,5 +19,8 @@
   },
   "dependencies": {
     "node-telegram-bot-api": "^0.25.0"
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0"
   }
 }

@@ -1,15 +1,16 @@
 'use strict';
 
 const TelegramBot = require('node-telegram-bot-api');
-const fs = require('fs');
-
-const CONFIG_FILE_NAME = 'config.json';
-const config = JSON.parse(fs.readFileSync(CONFIG_FILE_NAME));
 
 const WAVE = '🌊';
 const ROW_LENGTH = 22;
 
-let token = config.token;
+let token = process.env.TOKEN;
+
+if (!token) {
+  console.error(`TOKEN does not exist in process.env`);
+  process.exit();
+}
 
 let bot = new TelegramBot(token, {
   polling: true
