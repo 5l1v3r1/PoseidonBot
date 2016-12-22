@@ -1,0 +1,23 @@
+{
+  "name": "telegramflood",
+  "version": "1.0.0",
+  "description": "A Telegram bot that floods the chat when /flood is invoked.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "telegram",
+    "flood",
+    "bot"
+  ],
+  "author": "Juan J. Alvarez <juan.alvarez7@upr.edu>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanjalvarez/TelegramFloodJS.git"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.25.0"
+  }
+}
