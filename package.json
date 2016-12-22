@@ -1,6 +1,6 @@
 {
   "name": "telegramflood",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Telegram bot that floods the chat when /flood is invoked.",
   "main": "app.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juanjalvarez/TelegramFloodJS.git"
+    "url": "https://github.com/juanjalvarez/PoseidonBot.git"
   },
   "dependencies": {
     "node-telegram-bot-api": "^0.25.0"
