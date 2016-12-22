@@ -13,7 +13,15 @@ let bot = new TelegramBot(token, {
   polling: true
 });
 
+const wave = '🌊';
+let flood = '';
+for (let x = 0; x < 1000; x++)
+  flood += wave;
+
 bot.on('message', (msg) => {
   let chatId = msg.chat.id;
-  bot.sendMessage(chatId, `You said '${msg.text}'`);
+  let msgText = msg.text;
+  let split = msg.text.split(' ');
+  if (split[0] === '/flood')
+    bot.sendMessage(chatId, flood);
 });
